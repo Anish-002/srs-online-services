@@ -1,0 +1,11 @@
+{
+  "name": "SRS Online Services",
+  "description": "Your Trusted Digital Service Partner. Premium online services including PAN, Aadhaar, Insurance, and Banking with fast processing and 24/7 support.",
+  "requestFramePermissions": [
+    "geolocation"
+  ],
+  "majorCapabilities": [
+    "AI-powered support",
+    "Digital service automation"
+  ]
+}
