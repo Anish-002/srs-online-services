@@ -14,19 +14,19 @@ export function About() {
               className="relative z-10 rounded-[3rem] overflow-hidden shadow-2xl skew-y-1"
             >
               <img 
-                src="https://images.unsplash.com/photo-1600880212319-78443396aa70?q=80&w=1000&auto=format&fit=crop" 
+                src="/images/details.png" 
                 alt="Our Vision" 
                 className="w-full aspect-square object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
               <div className="absolute bottom-10 left-10 text-white">
-                <p className="text-4xl font-black font-heading mb-2">Since 2018</p>
-                <p className="opacity-80">Empowering millions with digital growth.</p>
+                <p className="text-4xl font-black font-heading mb-2">Since 2022</p>
+                <p className="opacity-80">Empowering millions with digital growth.</p>  
               </div>
             </motion.div>
             
             {/* Floating Trust Card */}
-            <motion.div 
+            {/* <motion.div 
                animate={{ y: [0, -20, 0] }}
                transition={{ duration: 6, repeat: Infinity }}
                className="absolute top-20 -right-10 glass p-8 rounded-3xl shadow-2xl z-20 max-w-[280px]"
@@ -38,7 +38,7 @@ export function About() {
                 <h4 className="font-bold text-lg leading-tight uppercase">ISO Certified <br /> Excellence</h4>
               </div>
               <p className="text-sm text-slate-500 dark:text-slate-400">Recognized for delivering secure and reliable government services across India.</p>
-            </motion.div>
+            </motion.div> */}
           </div>
 
           <div className="space-y-10">

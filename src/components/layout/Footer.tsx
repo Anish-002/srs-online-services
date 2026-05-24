@@ -10,11 +10,15 @@ export function Footer() {
           {/* Brand Column */}
           <div className="space-y-6">
             <a href="#home" className="flex items-center gap-2 group cursor-pointer w-fit">
-              <div className="w-10 h-10 bg-gradient-to-br from-srs-navy to-srs-cyan rounded-xl flex items-center justify-center text-white group-hover:scale-110 transition-transform">
-                <Rocket size={24} strokeWidth={2.5} />
-              </div>
+              <div className="w-10 h-10 rounded-xl overflow-hidden bg-white group-hover:scale-110 transition-transform shadow-lg">
+  <img
+    src="/images/logo.svg"
+    alt="SRS Logo"
+    className="w-full h-full object-cover"
+  />
+</div>
               <span className="text-2xl font-heading font-black tracking-tighter">
-                SRS <span className="text-srs-cyan text-3xl">Online</span>
+                SRS <span className="text-srs-cyan text-2xl">ONLINE SERVICES</span>
               </span>
             </a>
             <p className="text-slate-500 dark:text-slate-400 leading-relaxed max-w-xs">
@@ -80,11 +84,11 @@ export function Footer() {
             <div className="space-y-3 pt-2 text-sm">
               <div className="flex items-center gap-3 text-slate-500 dark:text-slate-400">
                 <Phone size={16} className="text-srs-cyan" />
-                <span>+91 98765 43210</span>
+                <span>+91 94081 90016</span>
               </div>
               <div className="flex items-center gap-3 text-slate-500 dark:text-slate-400">
                 <Mail size={16} className="text-srs-cyan" />
-                <span>support@srsonline.in</span>
+                <span>srsonlineservices008@gmail.com</span>
               </div>
             </div>
           </div>

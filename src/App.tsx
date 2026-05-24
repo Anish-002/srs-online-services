@@ -23,6 +23,9 @@ export default function App() {
   });
 
   const [showBackToTop, setShowBackToTop] = React.useState(false);
+  const message = encodeURIComponent(
+  "Hello SRS Online Service, mujhe PF services ki jaankari chahiye."
+);
 
   React.useEffect(() => {
     const handleScroll = () => {
@@ -75,7 +78,7 @@ export default function App() {
         )}
         
         <motion.a
-          href="https://wa.me/911234567890" // Placeholder WhatsApp number, user can update this
+          href={`https://wa.me/919408190016?text=${message}`} // Placeholder WhatsApp number, user can update this
           target="_blank"
           rel="noopener noreferrer"
           whileHover={{ scale: 1.1 }}

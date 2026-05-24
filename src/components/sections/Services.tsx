@@ -14,13 +14,70 @@ import {
   Building2, 
   Calculator, 
   LayoutList,
-  ArrowUpRight
+  ArrowUpRight,
+  BadgeCheck,
+  Bike,
+  IdCard,
+  Repeat,
+  Train,
+  Wallet
 } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
 const services = [
+  {
+    title: "E-Train Ticket Booking",
+    description: "Instant railway ticket booking assistance with confirmed and Tatkal ticket support.",
+    details: ["Tatkal booking", "PNR status check", "Cancellation support"],
+    icon: Train,
+    color: "bg-sky-600",
+  },
+  {
+    title: "New Licence Apply",
+    description: "Apply for new driving licence with complete documentation guidance.",
+    details: ["Learner licence", "Driving test booking", "Document assistance"],
+    icon: CarFront,
+    color: "bg-green-600",
+  },
+  {
+    title: "Licence Update",
+    description: "Update address, mobile number, and renew expired driving licence easily.",
+    details: ["DL renewal", "Address update", "Duplicate licence"],
+    icon: IdCard,
+    color: "bg-purple-600",
+  },
+  {
+    title: "PF KYC",
+    description: "Update Aadhaar, PAN, and bank details in your EPF account quickly.",
+    details: ["Aadhaar linking", "PAN update", "Bank verification"],
+    icon: BadgeCheck,
+    color: "bg-orange-600",
+  },
+  {
+    title: "PF Withdrawal",
+    description: "Get assistance for online PF withdrawal and claim status tracking.",
+    details: ["Online PF claim", "Advance withdrawal", "Claim tracking"],
+    icon: Wallet,
+    color: "bg-rose-600",
+  },
+  {
+    title: "PF Transfer",
+    description: "Transfer your EPF balance smoothly when changing jobs or companies.",
+    details: ["Old PF transfer", "UAN assistance", "Employer verification"],
+    icon: Repeat,
+    color: "bg-indigo-600",
+  },
+  {
+    title: "2 Wheeler Insurance",
+    description: "Affordable bike insurance renewal and new policy assistance from top brands.",
+    details: ["Instant renewal", "Third-party insurance", "Comprehensive plans"],
+    icon: Bike,
+    color: "bg-red-500",
+  },
+
+  // Existing Services
   {
     title: "PAN Card",
     description: "New PAN application, correction, and reprint services with fast processing.",

@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Star, ShieldCheck, Users, Clock, MousePointer2 } from "lucide-react";
 
 const stats = [
-  { label: "Happy Customers", value: "5000+", icon: Users },
+  { label: "Happy Customers", value: "500+", icon: Users },
   { label: "Premium Services", value: "50+", icon: Star },
   { label: "Response Time", value: "24/7", icon: Clock },
 ];
@@ -103,58 +103,48 @@ export function Hero() {
 
           {/* Visual Element */}
           <motion.div
-            initial={{ opacity: 0, scale: 0.8, rotate: -5 }}
-            animate={{ opacity: 1, scale: 1, rotate: 0 }}
-            transition={{ duration: 1, type: "spring", bounce: 0.4 }}
-            className="relative hidden lg:block"
-          >
-            <div className="relative z-10 w-full aspect-square bg-gradient-to-br from-slate-100 to-slate-200 dark:from-slate-800 dark:to-slate-900 rounded-[3rem] p-1 shadow-2xl group">
-              <div className="absolute inset-1 bg-gradient-to-tr from-srs-navy/20 to-srs-cyan/20 opacity-0 group-hover:opacity-100 transition-opacity duration-700 rounded-[2.8rem] z-10 pointer-events-none" />
-              
-              <img 
-                src="https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?q=80&w=1000&auto=format&fit=crop" 
-                alt="Digital Services Illustration" 
-                className="w-full h-full object-cover rounded-[2.8rem]"
-              />
-              
-              {/* Floating Cards */}
-              <motion.div 
-                animate={{ y: [0, -10, 0] }}
-                transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-                className="absolute top-10 -left-10 glass p-6 rounded-2xl shadow-xl flex items-center gap-4 max-w-[240px]"
-              >
-                <div className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center text-white">
-                  <ShieldCheck strokeWidth={2.5} />
-                </div>
-                <div>
-                  <p className="text-xs font-bold uppercase tracking-wider text-slate-400">Security</p>
-                  <p className="font-bold">100% Encrypted</p>
-                </div>
-              </motion.div>
+  initial={{ opacity: 0, scale: 0.85, y: 40 }}
+  animate={{ opacity: 1, scale: 1, y: 0 }}
+  transition={{ duration: 1, type: "spring", bounce: 0.3 }}
+  className="relative hidden lg:block"
+>
+  {/* Glow Effects */}
+  <div className="absolute -top-20 -right-20 w-72 h-72 bg-srs-cyan/20 blur-[100px] rounded-full" />
+  <div className="absolute -bottom-20 -left-20 w-72 h-72 bg-srs-navy/20 blur-[100px] rounded-full" />
 
-              <motion.div 
-                animate={{ y: [0, 15, 0] }}
-                transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-                className="absolute bottom-20 -right-10 glass p-6 rounded-2xl shadow-xl flex items-center gap-4 max-w-[240px]"
-              >
-                <div className="w-12 h-12 bg-srs-cyan rounded-full flex items-center justify-center text-white">
-                  <Star strokeWidth={2.5} />
-                </div>
-                <div>
-                  <p className="text-xs font-bold uppercase tracking-wider text-slate-400">Feedback</p>
-                  <p className="font-bold">4.9/5 Rating</p>
-                </div>
-              </motion.div>
-              
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-20 h-20 bg-white/20 backdrop-blur-3xl rounded-full border border-white/30 flex items-center justify-center text-white shadow-inner animate-pulse">
-                <MousePointer2 size={32} />
-              </div>
-            </div>
+  {/* Main Image Card */}
+  <div className="relative overflow-hidden rounded-[3rem] border border-white/10 bg-white/5 backdrop-blur-2xl shadow-[0_20px_80px_rgba(0,0,0,0.25)] group">
 
-            {/* Decorative Orbs */}
-            <div className="absolute -top-10 -right-10 w-40 h-40 bg-srs-navy/30 rounded-full blur-[60px] animate-pulse" />
-            <div className="absolute -bottom-20 -left-20 w-60 h-60 bg-srs-cyan/20 rounded-full blur-[80px]" />
-          </motion.div>
+    {/* Gradient Overlay */}
+    <div className="absolute inset-0 bg-gradient-to-tr from-srs-navy/30 via-transparent to-srs-cyan/20 opacity-80 z-10" />
+
+    {/* Shine Effect */}
+    <div className="absolute inset-0 overflow-hidden z-20">
+      <div className="absolute -left-[120%] top-0 h-full w-[60%] rotate-12 bg-white/10 blur-2xl group-hover:left-[140%] transition-all duration-1000" />
+    </div>
+
+    {/* Image */}
+    <img
+      src="/images/heroimage.png"
+      alt="SRS Online Services"
+      className="w-full aspect-square object-cover scale-105 group-hover:scale-110 transition-transform duration-700"
+    />
+
+    {/* Bottom Fade */}
+    <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-black/60 to-transparent z-20" />
+
+    {/* Glass Badge */}
+    <div className="absolute top-6 left-6 z-30 backdrop-blur-xl bg-white/10 border border-white/20 rounded-2xl px-5 py-3 shadow-xl">
+      <p className="text-xs uppercase tracking-[0.2em] text-white/60 font-bold">
+        Trusted Digital Services
+      </p>
+
+      <h3 className="text-white font-black text-xl mt-1">
+        SRS Online
+      </h3>
+    </div>
+  </div>
+</motion.div>
         </div>
       </div>
       

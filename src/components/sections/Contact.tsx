@@ -41,7 +41,7 @@ export function Contact() {
                 </div>
                 <div>
                   <h4 className="text-xl font-bold mb-1">Phone</h4>
-                  <p className="text-slate-500 dark:text-slate-400 text-lg font-medium">+91 98765 43210</p>
+                  <p className="text-slate-500 dark:text-slate-400 text-lg font-medium">+91 94081 90016</p>
                   <p className="text-slate-400 text-sm">Mon-Sat, 9AM to 7PM</p>
                 </div>
               </div>
@@ -52,7 +52,7 @@ export function Contact() {
                 </div>
                 <div>
                   <h4 className="text-xl font-bold mb-1">Email</h4>
-                  <p className="text-slate-500 dark:text-slate-400 text-lg font-medium">support@srsonline.in</p>
+                  <p className="text-slate-500 dark:text-slate-400 text-lg font-medium">srsonlineservices008@gmail.com</p>
                   <p className="text-slate-400 text-sm">Response within 24 hours</p>
                 </div>
               </div>
@@ -63,8 +63,8 @@ export function Contact() {
                 </div>
                 <div>
                   <h4 className="text-xl font-bold mb-1">Main Office</h4>
-                  <p className="text-slate-500 dark:text-slate-400 text-lg font-medium">123 Digital Plaza, Sector 45</p>
-                  <p className="text-slate-400 text-sm">New Delhi, India - 110001</p>
+                  <p className="text-slate-500 dark:text-slate-400 text-lg font-medium">Pandesara, Surat</p>
+                  <p className="text-slate-400 text-sm">Gujarat, India - 394221</p>
                 </div>
               </div>
             </div>

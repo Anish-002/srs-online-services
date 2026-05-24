@@ -38,13 +38,18 @@ export function Navbar() {
       )}
     >
       <a href="#home" className="flex items-center gap-2 group cursor-pointer">
-        <div className="w-10 h-10 bg-gradient-to-br from-srs-navy to-srs-cyan rounded-xl flex items-center justify-center text-white shadow-lg shadow-srs-navy/20 group-hover:scale-110 transition-transform">
-          <Rocket size={24} strokeWidth={2.5} />
-        </div>
-        <span className="text-2xl font-heading font-black tracking-tighter">
-          SRS <span className="text-srs-cyan">Online</span>
-        </span>
-      </a>
+  <div className="w-10 h-10 rounded-xl overflow-hidden shadow-lg shadow-srs-navy/20 group-hover:scale-110 transition-transform">
+    <img
+      src="/images/logo.svg"
+      alt="SRS Online Service Logo"
+      className="w-full h-full object-cover"
+    />
+  </div>
+
+  <span className="text-2xl font-heading font-black tracking-tighter">
+    SRS <span className="text-srs-cyan">ONLINE SERVICES</span>
+  </span>
+</a>
 
       {/* Desktop Nav */}
       <div className="hidden md:flex items-center gap-8">
