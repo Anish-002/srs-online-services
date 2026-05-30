@@ -215,7 +215,7 @@ export function Services() {
                 
                 <div className="p-6 pt-0 mt-auto">
                   <Button 
-                    render={<a href="#contact" />} 
+                    render={<a href="https://docs.google.com/forms/d/e/1FAIpQLSfgMEHMzGwwjsXUkuVdYmpi99dYjyEsIQOyNTbkMYrM-NwagQ/viewform?usp=publish-editor" />} 
                     nativeButton={false}
                     variant="ghost" 
                     className="w-full justify-between rounded-xl hover:bg-srs-cyan hover:text-white group/btn cursor-pointer"
